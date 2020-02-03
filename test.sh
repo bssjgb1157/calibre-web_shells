@@ -1,4 +1,5 @@
 #!/bin/bash
+##g
 pipinstell(){
 		pip3 install --target vendor -r requirements.txt
 		fail
