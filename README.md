@@ -14,7 +14,6 @@ source ./install.sh
 ```
 cd ./calibre-web
 nohup python3 cps.py &
-
 ```                    
 Open your Web Browser
  ```
