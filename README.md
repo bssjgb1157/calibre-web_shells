@@ -20,5 +20,5 @@ Open your web explorer
  ```
  ip:8083
  ```
- next,set database.
+ next step, set database.
 
