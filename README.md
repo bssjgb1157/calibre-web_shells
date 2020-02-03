@@ -16,7 +16,7 @@ cd ./calibre-web
 nohup python3 cps.py &
 
 ```                    
-Open your web explorer 
+Open your Web Browser
  ```
  ip:8083
  ```
