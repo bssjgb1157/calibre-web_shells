@@ -4,8 +4,6 @@ calibre-web一键安装脚本。
 本脚本在Debian9(ARMv7l)、Debian10(AMD64)测试通过。
 本脚本只支持Debian和Debian衍生的发行版系统(Ubuntu等)。
 
-如果你的服务器处于内网的话，建议把iptables关闭。
-
 ## Install
 
 ```
