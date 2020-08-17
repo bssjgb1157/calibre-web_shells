@@ -47,7 +47,7 @@ download()
 	      fi
 		      more /$iam/.pip/pip.conf
 	fail
-	if [ -e /usr/bin/wget -a /usr/bin/unzip ];then
+	if [ -e /usr/bin/wget && -a /usr/bin/unzip ];then
 		wget https://github.com/janeczku/calibre-web/archive/master.zip -O cali.zip
 	        unzip cali.zip
 		cont
@@ -62,7 +62,7 @@ cont
 #### install pip ####
 pip()
 {
-	if [ -e /usr/bin/pip -a /usr/bin/pip3 ];then
+	if [ -e /usr/bin/pip && -a /usr/bin/pip3 ];then
 		download
 	else
 		apt-get install python-pip -y
@@ -83,7 +83,7 @@ fi
 }
 
 #### install python ####
-if [  -e /usr/lib/python3/ -a /usr/lib/python2.7/ -a /usr/lib/python3.5/ ];then
+if [  -e /usr/lib/python3/ && -a /usr/lib/python2.7/ && -a /usr/lib/python3.5/ ];then
 	gits
 else
 	apt-get install python3 -y
