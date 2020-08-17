@@ -55,7 +55,7 @@ download()
 	else
 		apt install wget -y
 		apt install unzip -y
-		wget -P ./ https://github.com/janeczku/calibre-web/archive/master.zip -O cali.zip
+		wget -P /home https://github.com/janeczku/calibre-web/archive/master.zip -O cali.zip
 	unzip cali.zip
 cont	
 	fi
