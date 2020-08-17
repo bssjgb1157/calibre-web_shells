@@ -3,7 +3,7 @@
 pipinstell(){
 		pip3 install --target vendor -r requirements.txt
 		fail
-		echo " 安装完成!请进入calibre-web的目录，键入命令python3 cps.py以启动!
+		echo " 安装完成!请进入calibre-web的目录（默认放置在/home下），键入命令python3 cps.py以启动!
 	               如需 后台运行请键入命令【nohup python3 cps.py 】
 	              如需开机启动请自行将以上命令加入开机启动脚本中。
              	现在，请启动cps.py,然后在web浏览器输入【ip地址:8083】即可进入数据库设置界面!"	
@@ -50,12 +50,14 @@ download()
 	fail
 	if [ -e /usr/bin/wget && -a /usr/bin/unzip ];then
 		wget -P /home https://github.com/janeczku/calibre-web/archive/master.zip -O cali.zip
+                /home
 	        unzip cali.zip
 		cont
 	else
 		apt install wget -y
 		apt install unzip -y
 		wget -P /home https://github.com/janeczku/calibre-web/archive/master.zip -O cali.zip
+                cd /home
 	unzip cali.zip
 cont	
 	fi
