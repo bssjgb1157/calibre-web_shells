@@ -18,7 +18,7 @@ cont(){
 		pipinstall
 	fi
 }
-apt- get update
+apt-get update
 echo " 如果您的服务器在中国大陆，在开始安装Calibre-web之前，请确认您已修改hosts并且可加速解析访问GitHub。如果您未修改hosts，请在安装程序执行之前将其修改，或者使用代理软件代理Wget。【按Ctrl-C退出；按任意键继续。】"
 read continue_
 fail()
