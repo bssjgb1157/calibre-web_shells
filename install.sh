@@ -48,13 +48,13 @@ download()
 		      more /$iam/.pip/pip.conf
 	fail
 	if [ -e /usr/bin/wget -a /usr/bin/unzip ];then
-		wget https://github.com/janeczku/calibre-web/archive/master.zip -O ./cali.zip
+		wget https://github.com/janeczku/calibre-web/archive/master.zip -O cali.zip
 	        unzip cali.zip
 		cont
 	else
 		apt install wget -y
 		apt install unzip -y
-		wget https://github.com/janeczku/calibre-web/archive/master.zip -O ./cali.zip
+		wget https://github.com/janeczku/calibre-web/archive/master.zip -O cali.zip
 	unzip cali.zip
 cont	
 	fi
