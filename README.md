@@ -34,7 +34,7 @@ pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubuser
 ./start-debian.sh
 ```
 
-之后安装步骤同上。只是每次启动时需要先运行./start-debian.sh 。
+之后安装步骤同Debian的安装步骤。只是每次启动时需要先执行./start-debian.sh 。
 
 同一局域网（WLAN热点也可以）下的任何设备可打开在Termux上安装的Calibre 。
 
