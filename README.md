@@ -24,7 +24,7 @@ Open your Web Browser
  ```
  Next step, setting database.
 
-## Installing on Termux
+## Install on Termux
 
 安装时需要挂梯子，从打开Termux那刻起。
 
