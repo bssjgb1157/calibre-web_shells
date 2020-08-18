@@ -8,8 +8,8 @@ calibre-web一键安装脚本。
 ## Install
 
 ```
-chmod 777 ./install.sh
-source ./install.sh
+chmod 777 ./installer.sh
+source ./installer.sh
 ```
 
 ## Usage
