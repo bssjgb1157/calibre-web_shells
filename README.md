@@ -24,9 +24,11 @@ Open your Web Browser
  ```
  Next step, setting database.
 
-##Installing on Termux
+## Installing on Termux
 ...
 pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Debian/debian.sh && bash debian.sh
+./start-debian.sh
+
 ...
 
-./start-debian.sh 之后安装步骤同上。只是每次启动时需要先运行./start-debian.sh
+之后安装步骤同上。只是每次启动时需要先运行./start-debian.sh
