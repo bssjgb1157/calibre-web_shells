@@ -3,6 +3,7 @@
 calibre-web一键安装脚本。
 本脚本在Debian9(ARMv7l, ARM64)、Debian10(AMD64)测试通过。
 本脚本只支持Debian和Debian衍生的发行版系统(Ubuntu等)。
+2020.8.18 本脚本支持Termux。
 
 ## Install
 
