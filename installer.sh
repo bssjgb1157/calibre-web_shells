@@ -9,7 +9,7 @@ fail()                                                        {
 pipinstall(){
 		pip3 install --target vendor -r requirements.txt
 		fail
-		echo " 安装完成!请进入calibre-web的目录（默认放置在/home下），键入命令python3 cps.py以启动!
+		echo " 安装完成!请进入calibre-web的目录，键入命令python3 cps.py以启动!
 	               如需 后台运行请键入命令【nohup python3 cps.py 】
 	              如需开机启动请自行将以上命令加入开机启动脚本中。
              	现在，请启动cps.py,然后在web浏览器输入【ip地址:8083】即可进入数据库设置界面!"	
@@ -26,7 +26,7 @@ cont(){
 } 
 
 apt-get update
-echo " 如果您的服务器在中国大陆，在开始安装Calibre-web之前，请确认您已修改hosts并且可加速解析访问GitHub。如果您未修改hosts，请在安装程序执行之前将其修改，或者使用代理软件代理Wget。【按Ctrl-C退出；按任意键继续。】"
+echo " 注意事项：如果您的服务器在中国大陆，在开始安装Calibre-web之前，请确认您已修改hosts并且可加速解析访问GitHub。如果您未修改hosts，请在安装程序执行之前将其修改，或者使用代理软件代理Wget。 Calibre将被安装在本目录下。【按Ctrl-C退出；按任意键继续。】"
 read continue_
 #### download and install calibre-web ####
 download()
