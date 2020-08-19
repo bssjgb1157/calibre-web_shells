@@ -1,4 +1,5 @@
 #!/bin/bash 
+set -e
 ##g
 env(){
 touch env.sh
