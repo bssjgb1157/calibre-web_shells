@@ -14,8 +14,9 @@ source ./installer.sh
 
 ## Usage
 ```
-cd ./calibre-web
-nohup python3 cps.py &
+lcali
+或者
+nohup lcali &
 ```                
     
 Open your Web Browser
