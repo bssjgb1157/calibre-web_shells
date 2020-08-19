@@ -15,8 +15,6 @@ source ./installer.sh
 ## Usage
 ```
 lcali
-或者
-nohup lcali &
 ```                
     
 Open your Web Browser
