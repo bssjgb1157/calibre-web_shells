@@ -22,10 +22,10 @@ pipinstall(){
 		fail
 		rm -rf /usr/lib/cali.zip
 		env
-		echo " 安装完成!请进入calibre-web的目录，键入命令python3 cps.py以启动!
-	               如需 后台运行请键入命令【nohup python3 cps.py 】
+		echo " 安装完成!输入命令lcali即可启动。
+	               如需后台运行请键入命令【nohup lcali &】
 	              如需开机启动请自行将以上命令加入开机启动脚本中。
-             	现在，请启动cps.py,然后在web浏览器输入【ip地址:8083】即可进入数据库设置界面!"	
+             	现在，请启动cali,然后在web浏览器输入【ip地址:8083】即可进入数据库设置界面。"	
 	}
 cont(){
 	pwd_="`pwd`"
