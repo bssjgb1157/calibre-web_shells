@@ -29,7 +29,6 @@ pipinstall(){
              	现在，请启动cali,然后在web浏览器输入【ip地址:8083】即可进入数据库设置界面。"	
 	}
 cont(){
-	pwd_="`pwd`"
 	if [ $? -eq 1 ];then
 		echo "Calibre-web下载失败!请手动访问https://github.com/janeczku/calibre-web下载!下载完成之后，请将未解压的文件与此脚本放在同一文件夹内，然后再执行此脚本。"
 		exit 1 
