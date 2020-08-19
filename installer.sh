@@ -4,6 +4,7 @@ env(){
 touch env.sh
 chmod 777 env.sh
  echo "#!/bin/bash" >> ./env.sh
+ echo "echo 请访问ip:8083" >> ./env.sh
  echo "cd /usr/lib/calibre-web-master && python3 cps.py" >> ./env.sh
  ln -s ./env.sh ./lcali
  cp ./lcali /bin
@@ -69,8 +70,8 @@ download()
 		apt install unzip -y
 		wget https://github.com/janeczku/calibre-web/archive/master.zip -O cali.zip
 	unzip /usr/lib/cali.zip	
+       cont
 	fi
-	cont
 		}
 #### install pip ####
 pip()
