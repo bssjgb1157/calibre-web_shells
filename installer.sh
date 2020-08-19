@@ -55,7 +55,7 @@ download()
 	      else    
 	      mkdir /usr/lib/.pip/
 		      > /usr/lib/.pip/pip.conf 
-,		      echo [global] >> /usr/lib/.pip/pip.conf 
+		      echo [global] >> /usr/lib/.pip/pip.conf 
 		      echo trusted-host = pypi.douban.com >> /usr/lib/.pip/pip.conf  
 		      echo index-url = http://pypi.douban.com/simple >> /usr/lib/.pip/pip.conf   
 	      fi
