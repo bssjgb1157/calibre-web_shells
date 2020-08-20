@@ -121,6 +121,7 @@ if [  -e /usr/lib/python3/ -a /usr/lib/python2.7/ ];then
 else
 apt-get install python3
 gits
+fi
 }
 centos (){
 if [ -e /usr/local/bin/python2.7 ];then
@@ -128,6 +129,7 @@ if [ -e /usr/local/bin/python2.7 ];then
 else
 yum install python3 -y
 makepython
+fi
 }
 #### install python ####
 checksystem centos debian
