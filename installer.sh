@@ -111,18 +111,17 @@ yum install -y zlib-devel bzip2-devel openssl-devel xz-libs wget
 wget http://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz
 xz -d Python-2.7.13.tar.xz
 tar -xvf Python-2.7.13.tar
+rm -rf Python-2.7.13.tar.xz
 cd Python-2.7.13
 ./configure --prefix=/usr/local
 make
 make altinstall
 wget --no-check-certificate https://pypi.python.org/packages/source/s/setuptools/setuptools-1.4.2.tar.gz
-tar -xvf setuptools-1.4.2.tar.gz
+tar -xzvf setuptools-1.4.2.tar.gz
+rm -rf setuptools-1.4.2.tar.gz
 cd setuptools-1.4.2
 python2.7 setup.py install
 curl  https://bootstrap.pypa.io/get-pip.py | python2.7
-cd..
-cd..
-rm -rf ./Python-2.7.13
 gits
 }
 
