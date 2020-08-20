@@ -126,7 +126,7 @@ rm -rf ./Python-2.7.13
 gits
 }
 
-debian (){
+debian(){
 if [  -e /usr/lib/python3/ -a /usr/lib/python2.7/ ];then
 	gits
 else
@@ -134,7 +134,7 @@ apt-get install python3
 gits
 fi
 }
-centos (){
+centos(){
 if [ -e /usr/local/bin/python2.7 ];then
 	gits
 else
