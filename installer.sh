@@ -115,13 +115,21 @@ rm -rf Python-2.7.13.tar.xz Python-2.7.13.tar                  cd Python-2.7.13 
 gits
 }
 
-#### install python ####
-if [  -e /usr/lib/python3/ -a /usr/lib/python2.7/ -o /usr/local/bin/python2.7 -a /usr/lib/python3.5/ ];then
+debian (){
+if [  -e /usr/lib/python3/ -a /usr/lib/python2.7/ ];then
 	gits
 else
-checksystem 'yum install python3 -y' 'apt-get install python3 -y'
-checksystem makepython 'apt-get install python2.7 -y'
+apt-get install python3
+gits
+}
+centos (){
+if [ -e /usr/local/bin/python2.7 ];then
 	gits
-fi
+else
+yum install python3 -y
+makepython
+}
+#### install python ####
+checksystem centos debian
 ##by bssjgb1157 2020.2
 
